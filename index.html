@@ -4,66 +4,95 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ScreenCat — экранный котик для macOS</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <style>
     body {
-      font-family: 'Fredoka', sans-serif;
+      font-family: 'Comfortaa', cursive;
+    }
+    .hero-bg {
+      background: linear-gradient(135deg, #fef9f5 0%, #e5ddf4 100%);
     }
   </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
-  <header class="bg-gradient-to-br from-purple-100 to-blue-100 py-16 text-center px-4">
-    <h1 class="text-4xl sm:text-5xl font-bold mb-4">🐾 ScreenCat</h1>
-    <p class="text-xl sm:text-2xl mb-6">Экранный котик с AI, мини-играми и скинами для macOS</p>
-    <div class="space-x-4">
-      <a href="#download" class="bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-6 rounded-xl transition">Скачать для Mac</a>
-      <a href="#demo" class="bg-white hover:bg-gray-100 border border-purple-600 text-purple-600 font-semibold py-3 px-6 rounded-xl transition">Смотреть демо</a>
-    </div>
-  </header>
-
-  <section id="demo" class="py-16 px-4 text-center">
-    <h2 class="text-3xl font-bold mb-6">🎬 Как это выглядит</h2>
-    <img src="images/demo.gif" alt="Демонстрация ScreenCat" class="mx-auto rounded-xl shadow-xl max-w-full">
-  </section>
-
-  <section class="bg-white py-16 px-4">
-    <div class="max-w-3xl mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-6">✨ Особенности котика</h2>
-      <ul class="space-y-4 text-lg">
-        <li>🧠 Локальный AI — никакого интернета</li>
-        <li>🎮 Мини-игры: ловит мышку, прячется</li>
-        <li>🎨 Скины: выбирай стиль или покупай новый</li>
-        <li>💬 Живой характер: кот шутит, скучает и наблюдает</li>
-        <li>📌 Запоминает твои действия и имя</li>
-      </ul>
+<body class="bg-white text-gray-900">
+  <!-- Hero -->
+  <section class="hero-bg py-20 px-4 text-center">
+    <div class="max-w-3xl mx-auto">
+      <img src="images/cat_hero.png" alt="ScreenCat hero" class="w-40 h-40 mx-auto mb-6">
+      <h1 class="text-5xl font-bold mb-4">🐾 ScreenCat</h1>
+      <p class="text-xl mb-6">Твой экранный котик для macOS — с AI, скинами и мини-играми</p>
+      <div class="flex justify-center gap-4">
+        <a href="#download" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transition">Скачать для Mac</a>
+        <a href="#demo" class="bg-white border-2 border-purple-600 text-purple-600 font-bold py-3 px-6 rounded-full transition hover:bg-purple-50">Смотреть демо</a>
+      </div>
     </div>
   </section>
 
-  <section class="bg-gray-100 py-16 px-4">
+  <!-- Demo -->
+  <section id="demo" class="py-20 px-4 bg-gray-100 text-center">
+    <h2 class="text-3xl font-bold mb-6">🎬 Демонстрация</h2>
+    <p class="mb-8">Посмотри, как котик оживает у тебя на экране!</p>
+    <img src="images/demo.gif" alt="Демонстрация котика" class="mx-auto rounded-xl shadow-xl max-w-full">
+  </section>
+
+  <!-- Features -->
+  <section class="py-20 px-4 bg-white">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-12">✨ Что умеет котик?</h2>
+      <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div class="bg-gray-50 p-6 rounded-xl shadow text-center">
+          <div class="text-4xl mb-2">🧠</div>
+          <h3 class="font-bold mb-1">Локальный AI</h3>
+          <p>Полностью оффлайн, никаких серверов</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-xl shadow text-center">
+          <div class="text-4xl mb-2">🎮</div>
+          <h3 class="font-bold mb-1">Мини-игры</h3>
+          <p>Лови мышку, прячься и играй вместе</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-xl shadow text-center">
+          <div class="text-4xl mb-2">🎨</div>
+          <h3 class="font-bold mb-1">Скины</h3>
+          <p>Покупай, переключай, кастомизируй</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-xl shadow text-center">
+          <div class="text-4xl mb-2">💬</div>
+          <h3 class="font-bold mb-1">Диалоги</h3>
+          <p>Философствует, шутит, наблюдает</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-xl shadow text-center">
+          <div class="text-4xl mb-2">📌</div>
+          <h3 class="font-bold mb-1">Запоминает</h3>
+          <p>Знает твоё имя и привычки</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="bg-purple-50 py-20 px-4">
     <div class="max-w-3xl mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-6">❓ Вопросы</h2>
+      <h2 class="text-3xl font-bold mb-6">❓ Частые вопросы</h2>
       <div class="text-left space-y-6">
         <details class="bg-white p-4 rounded-xl shadow">
-          <summary class="cursor-pointer font-semibold">Это бесплатно?</summary>
+          <summary class="cursor-pointer font-semibold">💸 Это бесплатно?</summary>
           <p class="mt-2">Базовая версия — да. Некоторые скины — платные.</p>
         </details>
         <details class="bg-white p-4 rounded-xl shadow">
-          <summary class="cursor-pointer font-semibold">Нужен ли интернет?</summary>
+          <summary class="cursor-pointer font-semibold">🌐 Нужен ли интернет?</summary>
           <p class="mt-2">Нет, кот работает полностью оффлайн.</p>
         </details>
         <details class="bg-white p-4 rounded-xl shadow">
-          <summary class="cursor-pointer font-semibold">А будет версия для Windows?</summary>
-          <p class="mt-2">Пока только macOS. В будущем — возможно.</p>
+          <summary class="cursor-pointer font-semibold">🪟 А будет версия для Windows?</summary>
+          <p class="mt-2">Пока только macOS. Возможно в будущем.</p>
         </details>
       </div>
     </div>
   </section>
 
-  <footer class="bg-purple-50 text-center py-8 text-sm">
-    <p>Сделано с ❤️ в Swift и SpriteKit · <a href="https://t.me/prefire_ios" class="text-purple-600 underline">Telegram канал</a></p>
+  <footer class="bg-white border-t border-gray-200 text-center py-8 text-sm">
+    <p>Сделано с ❤️ на Swift + SpriteKit · <a href="https://t.me/prefire_ios" class="text-purple-600 underline">Подписаться в Telegram</a></p>
   </footer>
 </body>
 </html>
